@@ -8,9 +8,17 @@ This service is consumed by a separate backend repo (Express API) which is in tu
 
 ## 🏗️ How it fits into the system
 
+| Component | Role | Repository |
+|---|---|---|
+| **Frontend** | React Chat Widget | [cbc-frontend](https://github.com/Sashika71/cbc-frontend) |
+| **Backend** | Express API (`/api/chat`) | [crystal-beauty-clear-backend](https://github.com/Sashika71/crystal-beauty-clear-backend) |
+| **RAG Service** | This repo — retrieval + LLM (`/ask`) | *(you are here)* |
+| **LLM Provider** | Hugging Face Inference API | External |
+
+**Request flow:**
+
 ```
-React Chat Widget  →  Express Backend  →  this RAG Service  →  Hugging Face LLM
-   (frontend repo)      (backend repo)      (/ask endpoint)       (remote API)
+React Chat Widget → Express Backend → RAG Service (this repo) → Hugging Face LLM
 ```
 
 1. A customer asks a question in the chat widget.
@@ -145,6 +153,4 @@ Simple health check.
 
 ---
 
-## 📄 License
 
-This project is for internal use by Crystal Clear Beauty.
