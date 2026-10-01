@@ -47,7 +47,7 @@ React Chat Widget  →  Express Backend  →  this RAG Service  →  Hugging Fac
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/crystal-clear-beauty-rag.git
+git clone https://github.com/Sashika71/crystalclearbeauty-rag-chatbot.git
 cd rag-service
 ```
 
