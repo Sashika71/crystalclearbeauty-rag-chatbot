@@ -74,7 +74,6 @@ pip install -r requirements.txt
 Create a `.env` file in the project root:
 
 ```
-HUGGINGFACEHUB_API_TOKEN=your_hf_token_here
 HF_TOKEN=your_hf_token_here
 ```
 
